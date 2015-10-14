@@ -6,8 +6,9 @@ require.config({
 	  "login.module": "components/login/login_module",
 	  "uiRouter": "bower_components/angular-ui-router/release/angular-ui-router.min",
 	  "ngRoute": "bower_components/angular-route/angular-route.min",
-	  //"common.httpService": "components/common/httpService",
-	  //"common.urlService": "components/common/urlService"
+	  "common.httpService": "services/common/httpService",
+	  "common.urlService": "services/common/urlService",
+    "app.breezo": "components/breezoMeter/breezo_meter_module"
   },
   shim:{
 	  "angular": {

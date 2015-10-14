@@ -1,10 +1,13 @@
-define(["angular", "uiRouter", "login.module"], function(angular){
-	var app = angular.module("app", [ "ui.router", "login.module"]);
+define(["angular", "common.urlService", "common.httpService", "uiRouter", "login.module", "app.breezo"], function(angular, urlService, httpService){
+	var app = angular.module("app", [ "ui.router", "login.module", "app.breezo"]);
+
+	app.factory("urlService", urlService);
+	app.factory("httpService", httpService);
 
 	app.config([ "$urlRouterProvider", function($urlRouterProvider) {
-		$urlRouterProvider.otherwise('/login');
+		$urlRouterProvider.otherwise('/breezo');
 	} ]);
 	// $state.go("conversation");
-	angular.bootstrap(document, [ 'app' ]);
+	angular.bootstrap(document, [ "app" ]);
 	
 });

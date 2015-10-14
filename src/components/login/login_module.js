@@ -1,5 +1,6 @@
 define(["angular", "components/login/LoginController"], function(angular, loginController){
 	var loginModule = angular.module("login.module", []);
+
 	loginModule.controller("LoginController", loginController);
 
 	loginModule.config(["$stateProvider", function($stateProvider){
