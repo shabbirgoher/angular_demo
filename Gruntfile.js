@@ -11,5 +11,5 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask("default", ["clean:all", "bower", "copy", "connect", "watch"]);
-  grunt.registerTask("serve", ["clean:code", "copy", "connect", "watch"]);
+  grunt.registerTask("serve", ["clean:code", "copy", "express", "express-keepalive"]);
 };

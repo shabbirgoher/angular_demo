@@ -13,12 +13,12 @@ module.exports = function(){
     function requestService(req, res){
         var url = "";
         var reqeuestOptions = {
-            url: "http://api-beta.breezometer.com/baqi/?lat=40.7324296&lon=-73.9977264&key="
+            url: "http://api-beta.breezometer.com/baqi/?lat=40.7324296&lon=-73.9977264&key=90d40ebf137e4aeb818510501731ebde"
 
         };
 
         req.pipe(request(reqeuestOptions)).on("response", function (response){
-            console.log(response);
+            //console.log(response);
         }).pipe(res);
     }
 
